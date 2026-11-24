@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<nav>
+    <a href="/add.html">Create User</a> |
+    <a href="/index.html">View All Users</a> |
+    <a href="/searchUser.html">View By ID</a>
+</nav>
+<h2>View User By ID</h2>
+<input type="number" id="searchId"
+       placeholder="Enter User ID" min="1">
+<button onclick="viewUserById()">Search User</button>
+<br><br>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody id="singleUserTable">
+    <tr>
+        <td colspan="3">Search for a user by ID</td>
+    </tr>
+    </tbody>
+
+</table>
+<a href="/index.html">View All Users</a>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
